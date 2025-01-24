@@ -14,7 +14,10 @@ const URLS = {
 	ACCOUNT: "account/:accountId",
 	ACCOUNT_SETTINGS: "account/settings",
 
-	Dashboard: "/",
+	DASHBOARD: "/",
+
+	JOURNAL_DASHBOARD: "journal",
+	JOURNAL: "journal/:journalCode",
 }
 
 

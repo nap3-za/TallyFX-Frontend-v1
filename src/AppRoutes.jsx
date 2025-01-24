@@ -17,6 +17,9 @@ import ResetPasswordConfirmDone from "./pages/authentication/password-reset/Rese
 import Account from "./pages/account/Account";
 import AccountSettings from "./pages/account/AccountSettings";
 
+import JournalDashboard from "./pages/journal/Dashboard";
+import Journal from "./pages/journal/Journal";
+
 import PageNotFound from "./pages/misc/error/PageNotFound";
 import Redirect from "./components/misc/Redirect";
 
@@ -34,7 +37,8 @@ function AppRoutes(props) {
 	const URL_RESET_PASSWORD_CONFIRM_DONE = getUrl("RESET_PASSWORD_CONFIRM_DONE", true);
 	const URL_ACCOUNT = getUrl("ACCOUNT", true);
 	const URL_ACCOUNT_SETTINGS = getUrl("ACCOUNT_SETTINGS", true);
-
+	const URL_JOURNAL_DASHBOARD = getUrl("JOURNAL_DASHBOARD", true);
+	const URL_JOURNAL = getUrl("JOURNAL", true);
 
 	return (
 		<Routes>
@@ -53,6 +57,9 @@ function AppRoutes(props) {
 
 				<Route exact path={URL_ACCOUNT} element={<Account />} />
 				<Route exact path={URL_ACCOUNT_SETTINGS} element={<AccountSettings />} />
+
+				<Route exact path={URL_JOURNAL_DASHBOARD} element={<JournalDashboard />} />
+				<Route exact path={URL_JOURNAL} element={<Journal />} />
 
 				{/* Redirects */}
 				<Route exact path={URL_SIGN_IN} element={<Navigate to="/" />} />

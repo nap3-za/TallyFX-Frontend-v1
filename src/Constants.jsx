@@ -1,3 +1,3 @@
 
-export const BRAND_NAME_NORMAL = "NTech"
-export const BRAND_NAME_LOWER = "ntech"
+export const BRAND_NAME_NORMAL = "TallyFX"
+export const BRAND_NAME_LOWER = "tallyfx"
