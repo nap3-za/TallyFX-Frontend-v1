@@ -18,3 +18,11 @@ export const tokenConfigurator = getState => {
 	if (token) config.headers["Authorization"] = `Token ${token}`;
 	return config
 }
+
+export const serializeGetData = data => {
+	var str = [];
+	for (var p in data) {
+		str.push(encodeURIComponent(p) + "=" + encodeURIComponent(data[p]));
+	}
+	return str.join("&");
+}
